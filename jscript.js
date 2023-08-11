@@ -1,5 +1,5 @@
 function getRecipe (){
-    fetch(`https://api.api-ninjas.com/v1/recipe?query=asparagus`)
+    fetch(`https://api.api-ninjas.com/v1/recipe?query=burger`)
     .then(resp => {
         return resp.json
     })
