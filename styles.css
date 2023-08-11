@@ -2,3 +2,13 @@
     display: flex;
     flex-direction: column;
 }
+
+.header-containter{
+    height: 800px;
+    width: 100%;
+    background-image:url(https://images.squarespace-cdn.com/content/v1/5b96a278cc8fed3edf98dd98/1538459496942-5NBWBFSM2APP8ON86B7T/cover-levelup.jpg) ;
+   position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
