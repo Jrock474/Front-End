@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
 }
-
 .header-containter{
     height: 650px;
     width: 100%;
@@ -12,3 +11,20 @@
     top: 0px;
     z-index: 1;
 }
+
+.mental-health-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.fitness-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.mental-health-container img{
+    height: 20vh;
+    width: 40px
+}
+
