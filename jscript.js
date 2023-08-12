@@ -1,11 +1,20 @@
+const json = `https://api.api-ninjas.com/v1/recipe?query=chicken`
+const postList = document.getElementById("post-list")
+
 function getRecipe (){
-    fetch(`https://api.api-ninjas.com/v1/recipe?query=burger`)
-    .then(resp => {
-        return resp.json
+    fetch (json)
+    .then(response => {
+        return response.json();
+
     })
-    .then(Recipe =>{
-        console.log(Recipe)
+    .then(lists => {
+        lists.forEach(x => {
+            const listItem = document.createElement("li");
+            listItem.innerHTML= ``;
+            postList.appendChild(listItem);
+
+        });
+
     })
 }
-
 //I'll be working on this api for while
