@@ -9,3 +9,19 @@ function getRecipe (){
 }
 
 //test
+
+
+function getExercise(){
+fetch('https://api-ninjas.com/api/exercises')
+
+.then(resp => {
+    return resp.json
+})
+.then(Exercise =>{
+    console.log(Exercise)
+})
+
+}
+
+//run a test
+
