@@ -1,3 +1,6 @@
+*{
+    margin: 0
+}
 .main-containter{
     display: flex;
     flex-direction: column;
@@ -11,10 +14,11 @@
     top: 0px;
     z-index: 1;
 }
-
+/* CSS for Mental Health Container and its children */
 .mental-health-container{
+    height: 85vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
 }
 
@@ -24,7 +28,16 @@
 }
 
 .mental-health-container img{
-    height: 20vh;
-    width: 40px
+    height: 350px;
+    width: 100%
 }
+
+.content-containter{
+    font-size: 18px;
+    align-items: center;
+    padding: 20px;
+    justify-items: center;
+}
+
+
 
