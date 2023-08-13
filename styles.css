@@ -1,30 +1,110 @@
 .main-containter{
     display: flex;
     flex-direction: column;
+    
 }
 .header-containter{
-    height: 650px;
+    height: 675px;
     width: 100%;
+    background-position: center;
     background-image:url(https://images.squarespace-cdn.com/content/v1/5b96a278cc8fed3edf98dd98/1538459496942-5NBWBFSM2APP8ON86B7T/cover-levelup.jpg) ;
-   position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
-    z-index: 1;
+    background-size: cover;
+    background-attachment: fixed;
+   top: 0px;
+   z-index: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
+
+.addContent{
+    margin-top: 100px;
+    height: 400px;
+    width: 100%;
+    background-color:#000000;
+    border-style:solid;
+    border-color: #000000;
+    border-width: 10px;
+    position: absolute;
+    z-index: 2;
+    }
+
+.innerHtext{ color: #d3a121;
+    
+    font-family: impact,fantasy;
+    font-size: 35px;
+    }
+    .innerHtext2{color: #d3a121;
+       margin-left: 10px;
+        font-family: impact,fantasy;
+        font-size: 35px;}
+
 
 .mental-health-container{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-top: 300px;
+    z-index: 3;
+    background-color: #d3a121;
 }
 
 .fitness-container{
     display: flex;
     flex-direction: row;
+    z-index: 4;
+
 }
 
 .mental-health-container img{
     height: 20vh;
-    width: 40px
+    width: 40px;
+    z-index:5 ;
+    
+}
+/*customizes search bar */
+
+body{ 
+    background-color: #000000;
+    margin: 0px;
+    padding: 0px;
+    font-family: impact:fantasy;
+    
 }
 
+nav{
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    padding:10px 90px;
+    background:rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid #000000;}
+    .logo{
+        padding: 22px 20;
+        height: 80px;
+        float: left;
+        font-size: 50px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #d3a121;
+    }
+
+    ul{
+        list-style: none;
+        float: right;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+    }
+
+     .navList{
+        line-height: 80px;
+        color: #d3a121;
+        padding: 12px 30px;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
