@@ -57,6 +57,13 @@
     background-color: #d3a121;
 }
 
+.content-containter{
+    font-size: 18px;
+    align-items: center;
+    padding: 20px;
+    justify-items: center;
+}
+
 .fitness-container{
     display: flex;
     flex-direction: row;
@@ -118,12 +125,7 @@ nav{
         text-transform: uppercase;
     }
 
-.content-containter{
-    font-size: 18px;
-    align-items: center;
-    padding: 20px;
-    justify-items: center;
-}
+
 
 
 
