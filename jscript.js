@@ -26,3 +26,4 @@ const fetchData = () => {
 submitQuery.addEventListener("click", () => {
     fetchData();
 });
+
