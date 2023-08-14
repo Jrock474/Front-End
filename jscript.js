@@ -1,10 +1,10 @@
-const queryForm = document.getElementById("query-form");
-const apiDataList = document.getElementById("api-data-list");
-
-queryForm.addEventListener("submit", async event => {
-    event.preventDefault();
-
-    const apiQueryInput = document.getElementById("api-query");
-    const apiUrl = `https://api.api-ninjas.com/v1/recipe?query=${apiQueryInput.value}`;
-})
-console.log
+let url = 'https://api.api-ninjas.com/v1/recipe?query=pork'
+let key = {
+    headers: { 'x-api-key': '9uIr2fvAn8JOJkk8M5TFFV4EUTHMNNtuXdcsIQkj' }
+  }
+  
+    fetch(url,key)
+        .then(res => res.json())
+        .then(recipes => {
+          console.log(recipes)
+        })
