@@ -16,14 +16,14 @@ const fetchData = () => {
     .then(recipes => {
         console.log('Fetched data:', recipes);
 
-        // Fix: Iterate through recipes.results using recipes.results.length
-        for (let i = 0; i < recipes.results.length; i++) {
-            const recipeItem = document.createElement('div');
-            const titleElement = document.createElement('p');
-            titleElement.textContent = recipes.results[i].title;
-            recipeItem.appendChild(titleElement);
-            recipesDiv.appendChild(recipeItem);
-        }
+        const dataArr = recipes.results
+        for (let i = 0; i < dataArr.length; i++) {
+          const recipeItem = document.createElement('div');
+          const titleElement = document.createElement('p');
+          titleElement.innerText = dataArr[i].title; 
+          recipeItem.appendChild(titleElement);
+          recipesDiv.appendChild(recipeItem);
+      }
     })
     .catch(error => {
         console.error('Error fetching data:', error);
