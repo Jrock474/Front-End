@@ -18,30 +18,33 @@ nav{
     top: 710px;
     right:50px;
     width: 1000px;
-    height: 70px;
+    margin-top: 20px;
+    height: 60px;
     padding:10px 90px;
     border-bottom: 1px solid #000000;
-z-index: 1;}
+    background: rgba(0, 0, 0, 0.7);
     
-    
+}
 
-    ul{
-        list-style: none;
-        float: center;
-        margin: 0px;
-        padding: 0px;
-        display: flex;
-    }
 
-     .navList{
-        line-height: 80px;
-        color: #d3a121;
-        padding: 12px 30px;
-        text-decoration: none;
-        font-size: 15px;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
+
+ul{
+    list-style: none;
+    float: center;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.navList{
+    line-height: 80px;
+    color: #d3a121;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
     .navList:hover{
         color: white;
     }
