@@ -1,10 +1,10 @@
 
 const submitQuery = document.getElementById("api-query");
 const userInput = document.getElementById("query-input");
-const recipesDiv = document.getElementById("recipe-list");
 
-const fetchData = () => {
-    const inputValue = userInput.value;
+const fetchData = ()=>{
+    const inputValue = userInput.value; // Retrieve the input value when the button is clicked
+    console.log("user input", inputValue);
 
     let url = `https://api.api-ninjas.com/v1/recipe?query=${inputValue}`;
     let key = {
@@ -12,23 +12,13 @@ const fetchData = () => {
     };
 
     fetch(url, key)
-    .then(res => res.json())
-    .then(recipes => {
-        console.log('Fetched data:', recipes);
-
-        const dataArr = recipes.results
-        for (let i = 0; i < dataArr.length; i++) {
-          const recipeItem = document.createElement('div');
-          const titleElement = document.createElement('p');
-          titleElement.innerText = dataArr[i].title; 
-          recipeItem.appendChild(titleElement);
-          recipesDiv.appendChild(recipeItem);
-      }
-    })
-    .catch(error => {
-        console.error('Error fetching data:', error);
-    });
+        .then(res => res.json())
+        .then(recipes => {
+            console.log(recipes);
+        });
 }
+
+
 
 submitQuery.addEventListener("click", () => {
     fetchData()
