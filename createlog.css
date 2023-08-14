@@ -28,9 +28,10 @@ z-index: 1;}
     ul{
         list-style: none;
         float: center;
-        margin: 0px;
+        margin: 15px;
         padding: 0px;
         display: flex;
+        background: rgba(0, 0, 0, 0.7);
     }
 
      .navList{
