@@ -26,9 +26,17 @@
         
         </div>
         <div class="addContent">
-            <div class="food-containter">
-                <h3>Enter an ingredient! We'll make some recipes for you</h3>
-                <ul id="recipe-list"></ul>
+            <div class="food-container">
+                <h3>Want some healthy recipes? We can help</h3>
+
+    <form id="query-form">
+        <label for="api-query">Type in an ingredient or food:</label>
+        <input type="text" id="api-query" required>
+        <button type="submit">Get Recipe</button>
+    </form>
+
+    <ul id="api-data-list"></ul>
+
             </div>
             <div class="fitness-container"></div>
             <div class="mental-health-container">

@@ -1,20 +1,10 @@
-const json = `https://api.api-ninjas.com/v1/recipe?query=chicken`
-const postList = document.getElementById("post-list")
+const queryForm = document.getElementById("query-form");
+const apiDataList = document.getElementById("api-data-list");
 
-function getRecipe (){
-    fetch (json)
-    .then(response => {
-        return response.json();
+queryForm.addEventListener("submit", async event => {
+    event.preventDefault();
 
-    })
-    .then(lists => {
-        lists.forEach(x => {
-            const listItem = document.createElement("li");
-            listItem.innerHTML= ``;
-            postList.appendChild(listItem);
-
-        });
-
-    })
-}
-//I'll be working on this api for while
+    const apiQueryInput = document.getElementById("api-query");
+    const apiUrl = `https://api.api-ninjas.com/v1/recipe?query=${apiQueryInput.value}`;
+})
+console.log
