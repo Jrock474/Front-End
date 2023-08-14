@@ -96,7 +96,11 @@
     display: flex;
     flex-direction: row;
     z-index: 4;
-
+    justify-content: center;
+    
+}
+.box {
+    background-color: dimgray;
 }
 
 .mental-health-container img{
@@ -119,8 +123,7 @@ body{
     background-color: #000000;
     margin: 0px;
     padding: 0px;
-    font-family: impact
-    
+    font-family: impact 
 }
 
 nav{
