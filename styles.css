@@ -19,7 +19,22 @@
    justify-content: center;
    align-items: center;
 }
-
+.hLogo{
+    position: absolute;
+    left: 100px;
+    top: 500px;
+    font-size: 100px;
+    color: #d3a121;
+    font-weight: bold;
+}
+.mission{
+    position: absolute;
+    left: 100px;
+    top: 650px;
+    font-size: 25px;
+    color: #d3a121;
+    font-weight: bold;
+}
 
 .addContent{
     margin-top: 100px;
@@ -33,15 +48,16 @@
     z-index: 2;
     }
 
-.innerHtext{ color: #d3a121;
-    
+.innerHtext{ 
+    color: #d3a121;
     font-family: impact,fantasy;
     font-size: 35px;
     }
     .innerHtext2{color: #d3a121;
-       margin-left: 10px;
+        margin-left: 10px;
         font-family: impact,fantasy;
-        font-size: 35px;}
+        font-size: 35px;
+    }
 
 
 
@@ -115,6 +131,7 @@ nav{
         padding: 22px 20;
         height: 80px;
         float: left;
+        font-family:fantasy,;
         font-size: 50px;
         font-weight: bold;
         text-transform: uppercase;
@@ -137,6 +154,9 @@ nav{
         font-size: 15px;
         font-weight: bold;
         text-transform: uppercase;
+    }
+    .navList:hover{
+        color: white;
     }
 
 
