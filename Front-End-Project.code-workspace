@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "Front-End-Project",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Front-End-Project"
+	}
+}
