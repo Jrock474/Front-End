@@ -1,0 +1,106 @@
+body{
+    background-image: url(https://www.androidguys.com/wp-content/uploads/2016/01/4a281384da6aeb2f320ac862826a28f4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 150vh;
+}
+.toptext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1px;
+    color: #d3a121;
+}
+
+nav{
+    position: fixed;
+    top: 710px;
+    right:50px;
+    width: 1000px;
+    height: 70px;
+    padding:10px 90px;
+    border-bottom: 1px solid #000000;
+z-index: 1;}
+    
+    
+
+    ul{
+        list-style: none;
+        float: center;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+    }
+
+     .navList{
+        line-height: 80px;
+        color: #d3a121;
+        padding: 12px 30px;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .navList:hover{
+        color: white;
+    }
+
+
+.toptext span{ 
+margin-top: 0px;
+margin-bottom: 10px;}
+.toptext img,
+.toptext p {
+margin: 0px;
+}
+.line{ margin-top: 0px;
+    color:#d3a121;
+font-size: 30px;}
+.logo{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 50px;
+    background-color: rgb(0, 0, 0);
+    position: -webkit-sticky;
+    position:sticky; 
+    top:0;
+    height:60px;
+}
+.createText { font-size: 20px; font: bold;
+ color: hsl(43, 73%, 48%);}
+.pWords{ margin-top: 0px ;
+    font-size:11px;}
+.cardImg{height: 20px;
+}
+#hfForm { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+label{ margin-bottom: 
+    font-weight: 100;
+    font-size: 15px;
+    }
+.startHere{ font-size: 15px;
+font-weight: 100;} 
+.fName{ 
+}
+input{ width: 450px;
+height: 35px;
+background-color: rgba(255, 255, 255, 0.7);
+}
+
+.password{ margin: 0px;}
+.text1{
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.terms{ font-size: 14px;
+font-weight: 100;}
+
+.fieldset{
+    background:rgba(0, 0, 0, 0.7);
+}

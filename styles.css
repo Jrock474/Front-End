@@ -19,7 +19,22 @@
    justify-content: center;
    align-items: center;
 }
-
+.hLogo{
+    position: absolute;
+    left: 100px;
+    top: 500px;
+    font-size: 100px;
+    color: #d3a121;
+    font-weight: bold;
+}
+.mission{
+    position: absolute;
+    left: 100px;
+    top: 650px;
+    font-size: 25px;
+    color: #d3a121;
+    font-weight: bold;
+}
 
 .addContent{
     margin-top: 100px;
@@ -33,31 +48,44 @@
     z-index: 2;
     }
 
-.innerHtext{ color: #d3a121;
-    
+.innerHtext{ 
+    color: #d3a121;
     font-family: impact,fantasy;
     font-size: 35px;
     }
     .innerHtext2{color: #d3a121;
-       margin-left: 10px;
+        margin-left: 10px;
         font-family: impact,fantasy;
-        font-size: 35px;}
+        font-size: 35px;
+    }
 
 
 
 /* CSS for Mental Health Container and its children */
 
 .mental-health-container{
-    height: 85vh;
+    height: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     margin-top: 300px;
     z-index: 3;
     background-color: #d3a121;
 }
 
+.mental-health-qoute{
+    text-align: center;
+    
+}
+
+.mental-health-container h3{
+    padding-top: 20px;
+    text-decoration: solid;
+    text-align: center;
+}
+
 .content-containter{
+    margin: 10px;
     font-size: 18px;
     align-items: center;
     padding: 20px;
@@ -78,6 +106,13 @@
     z-index:5 ;
     
 }
+
+.mental-health-list-container{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
 /*customizes search bar */
 
 body{ 
@@ -101,13 +136,14 @@ nav{
         padding: 22px 20;
         height: 80px;
         float: left;
+        font-family:fantasy,;
         font-size: 50px;
         font-weight: bold;
         text-transform: uppercase;
         color: #d3a121;
     }
 
-    ul{
+    nav ul{
         list-style: none;
         float: right;
         margin: 0px;
@@ -123,6 +159,9 @@ nav{
         font-size: 15px;
         font-weight: bold;
         text-transform: uppercase;
+    }
+    .navList:hover{
+        color: white;
     }
 
 
