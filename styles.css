@@ -48,16 +48,23 @@
 /* CSS for Mental Health Container and its children */
 
 .mental-health-container{
-    height: 85vh;
+    height: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     margin-top: 300px;
     z-index: 3;
     background-color: #d3a121;
 }
 
+.mental-health-container h3{
+    padding-top: 20px;
+    text-decoration: solid;
+    text-align: center;
+}
+
 .content-containter{
+    margin: 10px;
     font-size: 18px;
     align-items: center;
     padding: 20px;
@@ -78,6 +85,13 @@
     z-index:5 ;
     
 }
+
+.mental-health-list-container{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
 /*customizes search bar */
 
 body{ 
@@ -107,7 +121,7 @@ nav{
         color: #d3a121;
     }
 
-    ul{
+    nav ul{
         list-style: none;
         float: right;
         margin: 0px;
