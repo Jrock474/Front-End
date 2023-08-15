@@ -226,6 +226,7 @@ nav{
         z-index: 3;
         background-color: #d3a121;
         padding: 100px;
+        align-items: center;
     }
 
     .exercise-container{
@@ -237,6 +238,7 @@ nav{
         z-index: 3;
         background-color: #d3a121;
         padding: 100px;
+        align-items: center;
     }
 
     /* Media Query */
