@@ -7,7 +7,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -16,10 +15,10 @@
         <div class="logo">H&F</div>
         <ul>
             <li>
-                <link><a href="index.html" class="navList">Home</a><link>
+                <link><a href="#" class="navList">Home</a><link>
             </li>
             <li>
-                <link><a href="contact.html" class="navList">Contact Us</a></link>
+                <link><a href="#" class="navList">News</a></link>
             </li>
             <li>
                 <link><a href="#" class="navList">Blog</a></link>
@@ -31,7 +30,7 @@
                 <link><a href="#" class="navList">About</a></link>
             </li>
             <li>
-                <link><a href="login.html" class="navList">Login</a></link>
+                <link><a href="#" class="navList">Contact</a></link>
             </li>
         </ul>
     </nav>
@@ -44,30 +43,19 @@
 
     </div>
     <div class="addContent">
+        <div class="food-container">
+            <h3>Want some healthy recipes? We can help</h3>
 
-        <!-- Exercise generator-->
-        <div class="exercise-container">
-            <h3>Want some exercise tutorials?</h3>
-        
-            <div id="query-form2">
-                <label for="api-query2">Type in a muscle group to work on</label>
-                <input id="query-input2" type="text">
-                <button id="api-query2" type="submit">Get exercises</button>
+            <div id="query-form">
+                <!-- <label for="api-query">Type in an ingredient or food:</label> -->
+                <input id="query-input" type="text">
+                <button id="api-query" type="submit">Get Recipe</button>
             </div>
-        
-            <div id="exercise-list" style="color: black;"></div>
-            <div id="exercise-items"></div>
-        </div>
 
             <div id="recipes"></div>
-            <br>
 
-            <div id="recipe-items"></div>
-            <div id="recipe-list" style="color: #000000;"></div>
         </div>
-        <br>
             <div class="fitness-container">
-
                 <div class="box">
                     <div class="content">
 
@@ -76,11 +64,8 @@
                             <div class="sportImgHolder">
                                 <img src="images/running.jpeg" alt="woman running on a treadmill">
                             </div>
-
-                            <div>
+                        <div>
                             <h3 id="Ben">The Benefits Of Exercising Regularly</h3>
-                            <br>  <h5 id="doing">Doing so may:</h5>
-                            
                             </div>
 
                         
@@ -88,30 +73,32 @@
                       
 
                         <ul>
-                            
+                            <div>
+                            <h5 id="doing">Doing so may:</h5>
+                            </div>
                             <li>
-                                <h6 class="fitness-text">Help you control your weight paired with a good diet. It will help you control
+                                <h6>Help you control your weight paired with a good diet. It will help you control
                                     weight gain and prevent obesity.</h6>
                             </li>
 
                             <li>
-                                <h6 class="fitness-text">Reduce your risk of heart diseases. Exercising strengthens your heart which improves
+                                <h6>Reduce your risk of heart diseases. Exercising strengthens your heart which improves
                                     the circulation in your body. This helps lower your risk of heart diseases such as
                                     high cholesterol, coronary artery disease, and heart attack. Exercise can also lower
                                     your blood pressure.</h6>
                             </li>
 
                             <li>
-                                <h6 class="fitness-text">Help you quit smoking. Exercise may make it easier to quit smoking by reducing your
+                                <h6>Help you quit smoking. Exercise may make it easier to quit smoking by reducing your
                                     cravings, also, it helps to limit weight gained from smoking.</h6>
                             </li>
 
                             <li>
-                                <h6 class="fitness-text">Helps to keep your thinking, learning, and judgment skills sharp as you age.</h6>
+                                <h6>Helps to keep your thinking, learning, and judgment skills sharp as you age.</h6>
                             </li>
 
                             <li>
-                                <h6 class="fitness-text">Finally, your bones and muscles will be strengthened, some cancer risk will be
+                                <h6>Finally, your bones and muscles will be strengthened, some cancer risk will be
                                     reduced and sleep improvement will be achieved. Engaging in regular daily exercise
                                     will increase your chances of living longer.</h6>
                             </li>
@@ -119,23 +106,8 @@
                     </div>
             </div>
 
-            <div class="food-container">
-                <h3>They say 80% of your results come from 20% of your effort. That means your diet and nutrition are key.</h3>
-                <h4>Want some healthy recipes? We can help</h4>
-    
-                <div id="query-form">
-                    <label for="api-query">Type in an ingredient or food:</label>
-                    <input id="query-input" type="text">
-                    <button id="api-query" type="submit">Get Recipe</button>
-                </div>
-    
-    
-                <div id="recipe-items"></div>
-                <div id="recipe-list" style="color: #000000;"></div>
-            </div>
-
             <!-- Mental Health Section-->
-            <div data-aos="flip-left" data-aos-duration="3000" class="mental-health-container">
+            <div class="mental-health-container">
                 <h3>Mental Health</h3>
                 <div class="content-containter">
                     <p class="mental-health-qoute">
@@ -167,10 +139,6 @@
         </div>
     </div>
     <script src="jscript.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-      </script>
 </body>
 
 </html>
