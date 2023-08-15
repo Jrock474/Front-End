@@ -241,6 +241,18 @@ nav{
         align-items: center;
     }
 
+    .card-container {
+        background-color: black;
+        padding: 20px; /* Adjust as needed */
+        height: 200px;
+    }
+    
+    .card-box {
+    
+        margin-right: 30px;
+    }
+    
+
     /* Media Query */
 
     @media(max-width:1000px){
