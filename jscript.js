@@ -1,6 +1,7 @@
 const submitQuery = document.getElementById("api-query");
 const userInput = document.getElementById("query-input");
 const recipesDiv = document.getElementById("recipe-list");
+
 const fetchData = () => {
     const inputValue = userInput.value;
     const url = `https://api.api-ninjas.com/v1/recipe?query=${inputValue}`;
@@ -11,13 +12,14 @@ const fetchData = () => {
     .then(res => res.json())
     .then(recipes => {
         console.log('Fetched data:', recipes);
-        recipes.results.forEach(recipe => {
+        recipes.forEach(recipe => {
             const recipeItem = document.createElement('div');
             const titleElement = document.createElement('p');
             titleElement.innerText = recipe.title;
-            recipeItem.appendChild(titleElement);
+            recipeItem.innerText = recipe.ingredients;            
             recipesDiv.appendChild(recipeItem);
-        });
+            recipeItem.appendChild(titleElement);
+        })
     })
     .catch(error => {
         console.error('Error fetching data:', error);
