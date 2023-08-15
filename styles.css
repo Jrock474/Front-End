@@ -114,6 +114,8 @@
     margin-top: 5%;
     align-items:center;
     background-color: none;
+    font-size: xx-large;
+    
 
 }
 #doing {
@@ -121,6 +123,7 @@
     background-color:none;
     align-items: stretch;
     position:relative;
+    font-size: medium;
     
    
 
@@ -132,7 +135,14 @@
     padding: none;
     vertical-align: middle;
     
+    
    
+
+}
+
+.fitness-text{
+font-size: medium;
+line-height: 135%;
 
 }
 
