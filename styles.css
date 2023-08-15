@@ -221,10 +221,11 @@ nav{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        margin-top: 300px;
+        margin-top: 50px;
+        margin-bottom: 50px;
         z-index: 3;
         background-color: #d3a121;
-        padding: 100px;
+        padding: 50px;
         align-items: center;
     }
 
@@ -233,17 +234,19 @@ nav{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        margin-top: 300px;
+        margin-top: 50px;
         z-index: 3;
         background-color: #d3a121;
-        padding: 100px;
+        padding: 50px;
         align-items: center;
+    
     }
 
     .card-container {
         background-color: black;
         padding: 20px; /* Adjust as needed */
         height: 200px;
+        justify-content: space-around;
     }
     
     .card-box {
