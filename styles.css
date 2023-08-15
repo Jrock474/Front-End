@@ -99,13 +99,14 @@
 .fitness-container{
     display: flex;
     flex-direction: column;
-    z-index: 4;
+    /* z-index: 4; */
     justify-content: center;
-    
-    
+    /*cursor: pointer;*/
+       
 }
 .box {
     background-color: rgb(229, 179, 29);
+    
 }
 
 #Ben {
@@ -148,6 +149,16 @@ line-height: 135%;
 
 }
 
+button {
+    color: black;
+    margin-left: 72px;
+    border-radius: 50px;
+    
+}
+
+.anchor-button{
+    cursor: pointer;
+}
 
 /*Fitness Container code ends*/
 
