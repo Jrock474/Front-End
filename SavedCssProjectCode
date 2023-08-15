@@ -100,7 +100,6 @@
     z-index: 4;
     justify-content: center;
     
-    
 }
 .box {
     background-color: rgb(229, 179, 29);
@@ -114,8 +113,6 @@
     margin-top: 5%;
     align-items:center;
     background-color: none;
-    font-size: xx-large;
-    
 
 }
 #doing {
@@ -123,9 +120,6 @@
     background-color:none;
     align-items: stretch;
     position:relative;
-    font-size: medium;
-    
-   
 
 }
 
@@ -135,14 +129,7 @@
     padding: none;
     vertical-align: middle;
     
-    
    
-
-}
-
-.fitness-text{
-font-size: medium;
-line-height: 135%;
 
 }
 
@@ -171,7 +158,8 @@ body{
     background-color: #000000;
     margin: 0px;
     padding: 0px;
-    font-family: impact 
+    font-family: impact
+    
 }
 
 nav{
@@ -215,19 +203,4 @@ nav{
         color: white;
     }
 
-    .food-container{
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        margin-top: 300px;
-        z-index: 3;
-        background-color: #d3a121;
-        padding: 100px;
-    }
 
-    /* Media Query */
-
-    @media(max-width:1000px){
-        html { font-size: 9px; }
-    }
