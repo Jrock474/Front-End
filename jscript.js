@@ -21,14 +21,12 @@ const fetchData2 = () => {
             const titleElement = document.createElement('p');
             const instructionsList = document.createElement('p')
             instructionsList.innerText = exercise.difficulty;
-            titleElement.innerText = exercise.name;
-            exerciseItem.innerText = exercise.instructions; 
-            
-            
-            exerciseItem.appendChild(instructionsList)
+            titleElement.innerText = exercise.instructions;
+            exerciseItem.innerText = exercise.name; 
+            exerciseItem.appendChild(instructionsList);
             exerciseItem.appendChild(titleElement);
             exercisesDiv.appendChild(exerciseItem);
-            
+        
             exercisesDiv.style.border = 'solid 10px black';
             exercisesDiv.style.padding = '10px';
         })
@@ -66,8 +64,8 @@ const fetchData = () => {
             recipeItem.innerText = recipe.title;
             ingredientsList.innerText = recipe.ingredients;
             titleElement.innerText = recipe.instructions; 
-            recipesDiv.style.border = 'solid 10px black';
-            recipesDiv.style.padding = '10px';
+            titleElement.style.border = 'solid 10px black';
+            titleElement.style.padding = '10px';
             recipesDiv.appendChild(recipeItem);
             recipeItem.appendChild(ingredientsList);
             recipeItem.appendChild(titleElement);
