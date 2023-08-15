@@ -160,6 +160,26 @@ button {
     cursor: pointer;
 }
 
+#myBtn {
+    display:contents;
+    position: fixed; /* Fixed/sticky position */
+    bottom: 10px; 
+    right: 20px; 
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; 
+    outline: none; 
+    background-color: white; 
+    color: black; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /
+  }
+
 /*Fitness Container code ends*/
 
 
