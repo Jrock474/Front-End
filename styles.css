@@ -177,3 +177,9 @@ nav{
         background-color: #d3a121;
         padding: 100px;
     }
+
+    /* Media Query */
+
+    @media(max-width:1000px){
+        html { font-size: 9px; }
+    }
