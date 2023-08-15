@@ -18,11 +18,12 @@ nav{
     position: fixed;
     top: 710px;
     right:50px;
-    width: 1000px;
+    width: 1600px;
     height: 70px;
     padding:10px 90px;
     border-bottom: 1px solid #000000;
     background: rgba(0, 0, 0, 0.7);
+    align-items: center;
 }
     
     
@@ -33,6 +34,8 @@ nav{
         margin: 0px;
         padding: 0px;
         display: flex;
+        justify-content: center;
+        width: 100%;
     }
 
      .navList{
