@@ -65,6 +65,7 @@ const fetchData = () => {
             ingredientsList.innerText = recipe.ingredients;
             titleElement.innerText = recipe.instructions; 
             titleElement.style.border = 'solid 10px black';
+            titleElement.style.backgroundColor = 'wheat'
             titleElement.style.padding = '10px';
             recipesDiv.appendChild(recipeItem);
             recipeItem.appendChild(ingredientsList);

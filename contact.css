@@ -17,6 +17,7 @@ font-size:100px;
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 color: #d3a121;
 }
+
 .contacts{
     display: flex; 
     position: absolute;
@@ -72,3 +73,4 @@ nav{
     .navList:hover{
         color: white;
     }
+    
