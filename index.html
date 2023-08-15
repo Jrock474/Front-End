@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
 
@@ -15,10 +16,10 @@
         <div class="logo">H&F</div>
         <ul>
             <li>
-                <link><a href="#" class="navList">Home</a><link>
+                <link><a href="index.html" class="navList">Home</a><link>
             </li>
             <li>
-                <link><a href="#" class="navList">News</a></link>
+                <link><a href="contact.html" class="navList">Contact Us</a></link>
             </li>
             <li>
                 <link><a href="#" class="navList">Blog</a></link>
@@ -30,7 +31,7 @@
                 <link><a href="#" class="navList">About</a></link>
             </li>
             <li>
-                <link><a href="#" class="navList">Contact</a></link>
+                <link><a href="login.html" class="navList">Login</a></link>
             </li>
         </ul>
     </nav>
@@ -47,7 +48,7 @@
             <h3>Want some healthy recipes? We can help</h3>
 
             <div id="query-form">
-                <!-- <label for="api-query">Type in an ingredient or food:</label> -->
+                <label for="api-query">Type in an ingredient or food:</label>
                 <input id="query-input" type="text">
                 <button id="api-query" type="submit">Get Recipe</button>
             </div>
@@ -55,8 +56,10 @@
             <div id="recipes"></div>
             <br>
 
+            <div id="recipe-items"></div>
+            <div id="recipe-list" style="color: #000000;"></div>
         </div>
-            <div class="fitness-container">
+            <!-- <div class="fitness-container">
                 <div class="box">
                     <div class="content">
 
@@ -106,10 +109,10 @@
                             </li>
                         </ul>
                     </div>
-            </div>
+            </div> -->
 
             <!-- Mental Health Section-->
-            <div class="mental-health-container">
+            <div data-aos="flip-left" data-aos-duration="3000" class="mental-health-container">
                 <h3>Mental Health</h3>
                 <div class="content-containter">
                     <p class="mental-health-qoute">
@@ -141,6 +144,10 @@
         </div>
     </div>
     <script src="jscript.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
