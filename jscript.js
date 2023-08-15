@@ -8,6 +8,8 @@ const fetchData = () => {
     const key = {
         headers: { 'x-api-key': '9uIr2fvAn8JOJkk8M5TFFV4EUTHMNNtuXdcsIQkj' }
     };
+
+    recipesDiv.innerHTML ="";
     fetch(url, key)
     .then(res => res.json())
     .then(recipes => {
@@ -15,9 +17,14 @@ const fetchData = () => {
         recipes.forEach(recipe => {
             const recipeItem = document.createElement('div');
             const titleElement = document.createElement('p');
-            titleElement.innerText = recipe.title;
-            recipeItem.innerText = recipe.ingredients;            
+            const ingredientsList = document.createElement('p')
+            recipeItem.innerText = recipe.title;
+            ingredientsList.innerText = recipe.ingredients;
+            titleElement.innerText = recipe.instructions; 
+            recipesDiv.style.border = 'solid 10px black';
+            recipesDiv.style.padding = '10px';
             recipesDiv.appendChild(recipeItem);
+            recipeItem.appendChild(ingredientsList);
             recipeItem.appendChild(titleElement);
         })
     })
@@ -28,4 +35,6 @@ const fetchData = () => {
 submitQuery.addEventListener("click", () => {
     fetchData();
 });
+
+
 
