@@ -46,6 +46,8 @@
     border-width: 10px;
     position: absolute;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
     }
 
 .innerHtext{ 
@@ -235,7 +237,32 @@ nav{
         z-index: 3;
         background-color: #d3a121;
         padding: 100px;
+        align-items: center;
     }
+
+    .exercise-container{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 300px;
+        z-index: 3;
+        background-color: #d3a121;
+        padding: 100px;
+        align-items: center;
+    }
+
+    .card-container {
+        background-color: black;
+        padding: 20px; /* Adjust as needed */
+        height: 200px;
+    }
+    
+    .card-box {
+    
+        margin-right: 30px;
+    }
+    
 
     /* Media Query */
 

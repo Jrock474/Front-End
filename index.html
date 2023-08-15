@@ -10,7 +10,6 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
-
 <body>
     <nav>
         <div class="logo">H&F</div>
@@ -35,37 +34,18 @@
             </li>
         </ul>
     </nav>
-
     <div class="header-containter">
         <p class="hLogo">HEALTH & FITNESS</p>
         <p class="mission">Our Mission Is To Make The World A Healthier Place</p>
         <p class="innerHtext">“If it doesn't challenge you,</p>
         <p class="innerHtext2"> it doesn't change you.”~Fred DeVito </p>
-
     </div>
     <div class="addContent">
-        <div class="food-container">
-            <h3>Want some healthy recipes? We can help</h3>
-
-            <div id="query-form">
-                <label for="api-query">Type in an ingredient or food:</label>
-                <input id="query-input" type="text">
-                <button id="api-query" type="submit">Get Recipe</button>
-            </div>
-
-            <div id="recipes"></div>
-            <br>
-
-            <div id="recipe-items"></div>
-            <div id="recipe-list" style="color: #000000;"></div>
-        </div>
         <br>
             <div class="fitness-container">
                 <div data-aos="fade-up-left" data-aos-duration="3000" class="box">
                     <div class="content">
-
                         <div class ="nic-cont">
-
                             <div class="sportImgHolder">
                                 
                                 <a class="anchor-link" href="https://www.cdc.gov/physicalactivity/basics/pa-health/index.htm#:~:text=Regular%20physical%20activity%20is%20one,ability%20to%20do%20everyday%20activities.">
@@ -75,46 +55,33 @@
                                 
 
                             </div>
-
                             <div>
-                            <h3 id="Ben">The Benefits Of Exercising Regularly</h3>
+                                <h3 id="Ben">The Benefits Of Exercising Regularly</h3>
                             <br>  <h5 id="doing">Doing so may:</h5>
-                            
                             </div>
-
-                        
-                        </div>
-                      
+                        </div>                 
                         <a class="anchor-button" href="https://www.cdc.gov/physicalactivity/basics/pa-health/index.htm#:~:text=Regular%20physical%20activity%20is%20one,ability%20to%20do%20everyday%20activities." target="_blank">
                             <button class="w3-button w3-hover-black">More info</button>
                             
                         </a>
-                        <ul>
-                            
-                           
-                           
-                           
+
                             <li>
                                 <h6 class="fitness-text">Help you control your weight paired with a good diet. It will help you control
                                     weight gain and prevent obesity.</h6>
                             </li>
-
                             <li>
                                 <h6 class="fitness-text">Reduce your risk of heart diseases. Exercising strengthens your heart which improves
                                     the circulation in your body. This helps lower your risk of heart diseases such as
                                     high cholesterol, coronary artery disease, and heart attack. Exercise can also lower
                                     your blood pressure.</h6>
                             </li>
-
                             <li>
                                 <h6 class="fitness-text">Help you quit smoking. Exercise may make it easier to quit smoking by reducing your
                                     cravings, also, it helps to limit weight gained from smoking.</h6>
                             </li>
-
                             <li>
                                 <h6 class="fitness-text">Helps to keep your thinking, learning, and judgment skills sharp as you age.</h6>
                             </li>
-
                             <li>
                                 <h6 class="fitness-text">Finally, your bones and muscles will be strengthened, some cancer risk will be
                                     reduced and sleep improvement will be achieved. Engaging in regular daily exercise
@@ -123,7 +90,34 @@
                         </ul>
                     </div>
             </div>
+        </div>
 
+            <!-- Exercise generator-->
+        <div class="exercise-container">
+            <h3>Here are some exercise tutorials to get you started</h3>
+            <div id="query-form2">
+                <label for="api-query2">Type in a muscle group to work on</label>
+                <input id="query-input2" type="text">
+                <button id="api-query2" type="submit">Get exercises</button>
+            </div>
+            <div id="exercise-list" style="color: black;"></div>
+            <div id="exercise-items"></div>
+        </div>
+        <div class="food-container">
+                <h3>They say 80% of your results come from 20% of your effort. That means your diet and nutrition are key.</h3>
+                <h4>Want some healthy recipes? We can help</h4>
+                <div id="query-form">
+                    <label for="api-query">Type in an ingredient or food:</label>
+                    <input id="query-input" type="text">
+                    <button id="api-query" type="submit">Get Recipe</button>
+                </div>
+                <div id="recipe-items"></div>
+                <div id="recipe-list" style="color: #000000;"></div>
+            <div id="recipes"></div>
+            <br>
+            <div id="recipe-items"></div>
+            <div id="recipe-list" style="color: #000000;"></div>
+        </div>
             <!-- Mental Health Section-->
             <div data-aos="flip-left" data-aos-duration="3000" class="mental-health-container">
                 <h3>Mental Health</h3>
@@ -154,13 +148,61 @@
 
                 </div>
             </div>
+            <div class="card-container d-flex">
+                <div class="card-box">
+                    <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                        <img src="https://ca.slack-edge.com/T0569RDC6-U05BJQ7DR36-7d78da6348ee-192" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Jordan Williams</h5>
+                            <p class="card-text">Contributor</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                        <img src="https://ca.slack-edge.com/T0569RDC6-U05CWHW9SAD-8ecbd76a04a8-512" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">James Monk</h5>
+                            <p class="card-text">Contributor</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                        <img src="https://ca.slack-edge.com/T0569RDC6-U05BG85HZUK-8f3fcb92057e-512" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Michael Holland</h5>
+                            <p class="card-text">Contributor</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="card text-bg-dark mb-3" style="width: 18rem;">
+                        <img src="https://ca.slack-edge.com/T0569RDC6-U05D927NERJ-f2f6542cb274-512" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Kenny Pham</h5>
+                            <p class="card-text">COACH</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
-    </div>
+    
+    
     <script src="jscript.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
       </script>
+
+
+</div>
+
 </body>
 
 </html>
