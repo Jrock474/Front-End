@@ -19,16 +19,17 @@ const fetchData2 = () => {
         exercises.forEach(exercise => {
             const exerciseItem = document.createElement('div');
             const titleElement = document.createElement('p');
-            const instructionsList = document.createElement('p')
-            instructionsList.innerText = exercise.difficulty;
+            const diffList = document.createElement('p')
+            diffList.innerText = exercise.difficulty;
             titleElement.innerText = exercise.instructions;
-            exerciseItem.innerText = exercise.name; 
-            exerciseItem.appendChild(instructionsList);
+            exerciseItem.innerText = exercise.name;
+            exerciseItem.appendChild(diffList);
             exerciseItem.appendChild(titleElement);
             exercisesDiv.appendChild(exerciseItem);
-        
-            exercisesDiv.style.border = 'solid 10px black';
-            exercisesDiv.style.padding = '10px';
+            
+            titleElement.style.background ='wheat' 
+            titleElement.style.border = 'solid 10px black';
+            titleElement.style.padding = '10px';
         })
     })
     .catch(error => {

@@ -71,11 +71,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-top: -475px;
+    margin-top: 700px;
+    height: 700px;
     z-index: 3;
     /* background-color: #d3a121; */
     opacity: 80%;
     color: #d3a121;
+}
+.mentalImg{
+    background-image: url(https://images.unsplash.com/photo-1577344718665-3e7c0c1ecf6b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2938&q=80);
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 100px;
 }
 
 .mental-health-container h3{
@@ -91,7 +98,13 @@
     padding: 20px;
     justify-items: center;
 }
-
+.mental-health-quote{
+    margin-left: 450px;
+    font-size: 20px;
+}
+.mental-health-container h3{
+    font-size: 50px;
+}
 
 
 /*Fitness Container code*/
@@ -184,13 +197,13 @@ button {
 
 
 
-/*customizes search bar */
+/*customizes Nav bar */
 
 body{ 
     background-color: #000000;
     margin: 0px;
     padding: 0px;
-    font-family: impact 
+     
 }
 
 nav{
@@ -208,7 +221,6 @@ nav{
         padding: 22px 20;
         height: 80px;
         float: left;
-        font-family:fantasy,;
         font-size: 50px;
         font-weight: bold;
         text-transform: uppercase;
