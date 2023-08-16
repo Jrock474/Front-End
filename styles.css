@@ -291,4 +291,7 @@ nav{
 
     @media(max-width:1000px){
         html { font-size: 9px; }
+        nav{
+            display: none;
+        }
     }
