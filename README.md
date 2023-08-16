@@ -21,7 +21,7 @@
     </td>
     <td align="center">
         <a href="https://github.com/Jrock474">
-            <img src="https://avatars.githubusercontent.com/u/22531674?v=4" width="100;" alt="Jordan"/>
+            <img src="https://avatars.githubusercontent.com/u/105681548?v=4" width="100;" alt="Jordan"/>
             <br />
             <sub><b>Jordan</b></sub>
         </a>
