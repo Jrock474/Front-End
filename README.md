@@ -37,11 +37,15 @@
 </table>
 <h2>JS-Library</h2>
 <p>Animate on Scroll: adds scroll animations</p>
-<p>documentation:https://michalsnik.github.io/aos/</p>
 <p>npm download: $ npm install aos --save </p>
+
+<h2>Api</h2>
+<p>Ingredients: https://api-ninjas.com/api/recipe</p>
+<p>Exercises: https://api-ninjas.com/api/exercises</p>
 
 <h2>Funtionallity</h2>
 <p>H&F provides a dynamic expexrience tailered to each user. We provide feedback based off of user input that returns recipies and excercises based off your query. Start your journey today!</p>
+
     
     
 
