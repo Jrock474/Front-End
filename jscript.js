@@ -1,9 +1,11 @@
 // EXERCISE API GENERATOR
 
+//This is grabbing variables from HTML, specifically the IDs of your form
 const submitQuery2 = document.getElementById("api-query2");
 const userInput2 = document.getElementById("query-input2");
 const exercisesDiv = document.getElementById("exercise-list");
 
+//Creating our function to fetch our API, including the required key
 const fetchData2 = () => {
     const inputValue2 = userInput2.value; 
     const url = `https://api.api-ninjas.com/v1/exercises?muscle=${inputValue2}`; 
@@ -15,7 +17,11 @@ const fetchData2 = () => {
     fetch(url, key)
     .then(res => res.json())
     .then(exercises => {
+       
+        //Made sure we see the results in the console
         console.log('Fetched data:', exercises);
+        
+        //Hardest part, using DOM to append your API data back to the HTML page.
         exercises.forEach(exercise => {
             const exerciseItem = document.createElement('div');
             const titleElement = document.createElement('p');
@@ -32,10 +38,14 @@ const fetchData2 = () => {
             titleElement.style.padding = '10px';
         })
     })
+
+    //Catching errors in the console
     .catch(error => {
         console.error('Error fetching data:', error);
     });
 }
+
+//This creates an event listener to have the submit button call the function we created above
 submitQuery2.addEventListener("click", () => { 
     fetchData2();
 });
